@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="CSS/style.css" media="screen" title="no title" charset="utf-8">
+    <title>Générateur d'excuses bidons de rupture</title>
+  </head>
+  <body>
+
+    <script>
+
+      var homme = ["Je préfère regarder le dernier Star Wars que de me réveiller une nouvelle fois à tes côtés.",
+                  "Désolé, je préfère ta mère. Elle fait de meilleurs sandwichs.",
+                  "Je ne peux pas continuer à fréquenter quelqu'un qui n'aime pas le NSDAP.",
+                  "Tu sues du dos, et tu pues du cul, Karine. Au revoir.",
+                  "Je me suis rendu compte que même mes pieds sentaient meilleurs que ta bouche. Au revoir."];
+      var femme = ["Ce n'est pas toi le problème, c'est ta calvitie.",
+                  "12 centimètres c'est la taille parfaite pour une brosse à dent, pas pour le reste.",
+                  "Même mon oncle de 88 ans bande moins mou que toi, sale fiotte."];
+
+      function phrase(arr) {
+        return arr[Math.floor(Math.random() * arr.length)];
+      }
+
+      function generation() {
+        if (document.getElementById("homme").checked) {
+        return phrase(homme)}
+        else if (document.getElementById("femme").checked) {
+          return phrase(femme)
+        }
+        else {
+          return "Il faut choisir un sexe afin de profiter pleinement de l'expérience."
+        }
+      };
+
+    </script>
+
+    <section id="centre">
+
+      <h1>GEBDR</h1>
+
+      <p>Je suis :
+          <input type="radio" name="question" value="h" id="homme">Un homme
+          <input type="radio" name="question" value="f" id="femme">Une femme
+      </p>
+
+    <button type="button" onclick="document.getElementById('phrase').innerHTML = generation()">Générer</button>
+
+  <p id="phrase"></p>
+
+    </section>
+
+  <footer>
+    Imaginé et dirigé par <a href="http://twitter.com/craftedwithwood">@craftedwithwood</a>, codé par <a href="http://twitter.com/guiguivey">@guiguivey</a>.
+  </footer>
+
+  </body>
+</html>
