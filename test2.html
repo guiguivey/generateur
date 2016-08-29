@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="CSS/style.css" media="screen" title="no title" charset="utf-8">
+    <title>Générateur d'excuses bidons de rupture</title>
+  </head>
+  <body>
+
+    <script>
+
+      var homme = ["Je suis désolé", "Je ne suis pas désolé", "J'aime les lasagnes", "Je vais à la chasse", "Il fait beau aujourd'hui!"];
+      var femme = ["Je suis désolée", "Je ne suis pas désolée"];
+
+      function phrase(arr) {
+        return arr[Math.floor(Math.random() * arr.length)];
+      }
+
+      console.log(phrase(homme));
+    </script>
+
+      <h1>GEBDR</h1>
+
+    <button type="button" onclick="document.getElementById('phrase').innerHTML = phrase(homme)">Générer</button>
+
+  <p id="phrase"></p>
+
+  </body>
+</html>

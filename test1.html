@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Générateur d'excuses bidons de rupture</title>
+  </head>
+  <body>
+
+    <h1>GEBDR</h1>
+
+    <script>
+
+      var sujet = ["Je", "On"];
+      var verbe = ["pue", "mange"];
+      var cod = ["l'oignon", "les fesses"];
+
+      function phrase(arr) {
+        return arr[Math.floor(Math.random() * arr.length)];
+      }
+
+      console.log(phrase(sujet) + " " + phrase(verbe) + " " + phrase(cod) + ".");
+
+    </script>
+
+    <input type="button">
+
+  </body>
+</html>
