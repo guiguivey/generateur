@@ -6,7 +6,7 @@
 
 body {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 a:link {
@@ -26,6 +26,19 @@ a:active {
 }
 
                               /*CENTRE*/
+
+@keyframes tourner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#imagelicorne {
+  animation: tourner 8s linear infinite;
+}
 
 #centre h1 {
   margin: 20px;
@@ -53,6 +66,9 @@ a:active {
   margin: 0 10px;
 }
 
+#imagelicorne {
+  visibility: hidden;
+}
                             /*FOOTER*/
 
 footer {
@@ -81,12 +97,24 @@ footer {
     font-size: 3rem;
   }
 
+  .sexe {
+    font-size: 2rem;
+  }
+
+  #centre {
+    margin-top: 300px;
+  }
+
   #centre h1 {
     font-size: 3rem;
   }
 
   #centre p {
     margin: 10px 30px;
+  }
+
+  #centre #phrase {
+    margin: 50px 100px;
   }
 
   button {
