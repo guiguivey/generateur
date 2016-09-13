@@ -1,58 +1,66 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="CSS/style.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Générateur d'excuses bidons de rupture</title>
-  </head>
-  <body>
+</head>
 
-    <script>
+<body>
 
-      var homme = ["Je préfère regarder le dernier Star Wars que de me réveiller une nouvelle fois à tes côtés.",
-                  "Désolé, je préfère ta mère. Elle fait de meilleurs sandwichs.",
-                  "Je ne peux pas continuer à fréquenter quelqu'un qui n'aime pas le NSDAP.",
-                  "Tu sues du dos, et tu pues du cul, Karine. Au revoir.",
-                  "Je me suis rendu compte que même mes pieds sentaient meilleurs que ta bouche. Au revoir."];
-      var femme = ["Ce n'est pas toi le problème, c'est ta calvitie.",
-                  "12 centimètres c'est la taille parfaite pour une brosse à dent, pas pour le reste.",
-                  "Même mon oncle de 88 ans bande moins mou que toi, sale fiotte."];
+    <section id="description" class="flexboxc">
 
-      function phrase(arr) {
-        return arr[Math.floor(Math.random() * arr.length)];
-      }
-
-      function generation() {
-        if (document.getElementById("homme").checked) {
-        return phrase(homme)}
-        else if (document.getElementById("femme").checked) {
-          return phrase(femme)
-        }
-        else {
-          return "Il faut choisir un sexe afin de profiter pleinement de l'expérience."
-        }
-      };
-
-    </script>
-
-    <section id="centre">
-
-      <h1>GEBDR</h1>
-
-      <p>Je suis :
-          <input type="radio" name="question" value="h" id="homme">Un homme
-          <input type="radio" name="question" value="f" id="femme">Une femme
-      </p>
-
-    <button type="button" onclick="document.getElementById('phrase').innerHTML = generation()">Générer</button>
-
-  <p id="phrase"></p>
+        <h1>Générateur</h1>
+        <h2>Un best-of des pires excuses de rupture. <br>
+        Et elles ont toutes été testées et désaprouvées.</h2>
+        <a href="#generateur"><i class="fa fa-arrow-down fa-3x" aria-hidden="true" id="fleche"></i></a>
 
     </section>
 
-  <footer>
-    Imaginé et dirigé par <a href="http://twitter.com/craftedwithwood">@craftedwithwood</a>, codé par <a href="http://twitter.com/guiguivey">@guiguivey</a>.
-  </footer>
+    <section id="generateur" class="flexboxc">
 
-  </body>
+        <div id="logiciel">
+            <h2 id="rompre">Je veux rompre avec :</h2>
+            <input type="radio" name="question" value="h" id="homme">Un homme<br><br>
+            <input type="radio" name="question" value="f" id="femme">Une femme
+        </div>
+
+
+        <button type="button" onclick="document.getElementById('phrase').innerHTML = generation()" id="bouton">Générer</button>
+
+        <p id="phrase"></p>
+
+        <a href="#fin"><i class="fa fa-arrow-down fa-3x" aria-hidden="true" id="fleche"></i></a>
+
+    </section>
+
+    <section class="flexboxf" id="fin">
+
+        <h2>Qui suis-je?</h2>
+
+        <p class="gauche">Je m'appelle Guillaume, j'ai 26 ans et je suis dans le développement web depuis un peu plus de 6 mois.</p>
+        <p class="droite">Je suis présentement à la recherche d'un emploi d'intégrateur-web ou de développeur front-end.</p>
+        <p class="gauche">Voici l'adresse de mon site internet si vous souhaitez voir mes différentes réalisation : <span id="site">gveyrat.16mb.com</span></p>
+        <div class="flexboxr">
+            <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-gitlab fa-2x" aria-hidden="true"></i>
+        </div>
+
+    </section>
+    <footer>
+        Imaginé par <a href="http://twitter.com/craftedwithwood">@craftedwithwood</a>, codé par <a href="http://twitter.com/guiguivey">@guiguivey</a>.
+    </footer>
+
+
+
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/generateur.js"></script>
+    <script src="https://use.fontawesome.com/73cbc12730.js"></script>
+</body>
+
 </html>

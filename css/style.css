@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    color: #474744;
+}
+
+html, body {
+    height: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+h1, h2 {
+    font-weight: normal;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+p {
+  width: 100%;
+}
+
+input {
+    clear: both;
+}
+
+.flexboxc {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 200px;
+}
+
+.flexboxr {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 200px;
+}
+
+.flexboxf {
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 200px;
+}
+
+.gauche {
+  text-align: left;
+  margin: 5px 0;
+}
+
+.droite {
+  text-align: right;
+  margin: 5px 0;
+}
+
+#fleche {
+    margin-top: 15px;
+    opacity: 0.6;
+    position: relative;
+    -webkit-animation-name: hautbas;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-name: hautbas;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes hautbas {
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: 20px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+@keyframes hautbas {
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: 20px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+#rompre {
+  margin-bottom: 30px;
+}
+
+#generateur {
+    height: 100%;
+    margin: auto 50px;
+    text-align: center;
+}
+
+#phrase {
+  margin-top: 40px;
+  height: 100px;
+}
+
+#bouton {
+  background-color: white;
+  border: 1px solid #2994B2;
+  border-radius: 5px;
+  padding: 5px;
+  transition: 0.3s;
+  margin: 20px 0;
+}
+
+#bouton a {
+  color: white;
+  text-decoration: none;
+}
+
+#bouton:hover {
+  background-color: #2994B2;
+  color: #FFFBE0;
+}
+
+#logiciel {
+    padding: 30px 0;
+}
+
+.fa-2x {
+  margin: 0 5px;
+}
+
+footer {
+  background-color: #2994B2;
+  bottom: 0;
+  text-align: center;
+  color: #FFFBE0;
+  padding: 20px 0;
+}
+
+footer a {
+  color: #FFFBE0;
+  text-decoration: none;
+}
+
+/*----------MEDIA QUERIES----------*/
+
+@media (max-width:768px) {
+    #description {
+        margin: 0 50px;
+    }
+    #fin {
+        margin: 0 50px;
+    }
+}
+
+@media (max-width:992px and min-width:768px) {}
+
+@media (max-width:1200px and min-width:992px) {}
