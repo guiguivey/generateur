@@ -17,7 +17,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -244,9 +244,17 @@ footer a {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-
+#twitter {
+    color: #3084bb;
+}
+#linkedin {
+  color: #006fa6;
+}
+#gitlab {
+  color: #fc6d26;
+}
 #landscape {
-  display: none;
+    display: none;
 }
 
 /*----------MEDIA QUERIES----------*/
@@ -277,22 +285,21 @@ footer a {
     }
 
     #fin #fleche {
-      margin-top: 0px;
+        margin-top: 0px;
     }
 }
 @media (max-height: 600px) and (orientation:landscape) {
-
     #description, #generateur, #fin, footer {
-      display: none;
+        display: none;
     }
 
     #landscape {
-      height: 100%;
-      margin: 0 50px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+        height: 100%;
+        margin: 0 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 @media (max-width:992px and min-width:768px) {}
