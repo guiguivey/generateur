@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Générateur d'excuses bidons de rupture</title>
 </head>
 
-<<<<<<< HEAD
 <body>
 
     <section id="description" class="flexboxc">
@@ -21,29 +21,16 @@
     </section>
 
     <section id="generateur" class="flexboxc">
-=======
-    <section id="licorne">
 
-      <img src="images/unicorn.jpg" id="imagelicorne"/>
-
-    </section>
->>>>>>> 2df9237ebdc8112476966f4f88230b8dcecb5613
 
         <div id="logiciel">
             <h2 id="rompre">Je veux rompre avec :</h2>
-            <input type="radio" name="question" value="h" id="homme">Un homme<br><br>
-            <input type="radio" name="question" value="f" id="femme">Une femme
+            <input type="radio" name="question" value="h" id="homme"><span id="humain">Un homme</span><br><br>
+            <input type="radio" name="question" value="f" id="femme"><span id="humain">Une femme</span>
         </div>
 
 
-<<<<<<< HEAD
         <button type="button" onclick="document.getElementById('phrase').innerHTML = generation()" id="bouton">Générer</button>
-=======
-      <p><span class="sexe">Je suis :</span>
-          <input type="radio" name="question" value="h" id="homme"><span class="sexe">Un homme</span>
-          <input type="radio" name="question" value="f" id="femme"><span class="sexe">Une femme</span>
-      </p>
->>>>>>> 2df9237ebdc8112476966f4f88230b8dcecb5613
 
         <p id="phrase"></p>
 
@@ -57,7 +44,8 @@
 
         <p class="gauche">Je m'appelle Guillaume, j'ai 26 ans et je suis dans le développement web depuis un peu plus de 6 mois.</p>
         <p class="droite">Je suis présentement à la recherche d'un emploi d'intégrateur-web ou de développeur front-end.</p>
-        <p class="gauche">Voici l'adresse de mon site internet si vous souhaitez voir mes différentes réalisation : <span id="site">gveyrat.16mb.com</span></p>
+        <p class="gauche">Voici l'adresse de mon site internet si vous souhaitez voir mes différentes réalisation :</p>
+          <p id="site">gveyrat.16mb.com</p>
         <div class="flexboxr">
             <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
             <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
@@ -78,11 +66,9 @@
     <script src="https://use.fontawesome.com/73cbc12730.js"></script>
 </body>
 
-<<<<<<< HEAD
-=======
-  <script src="js/jquery-3.1.0.js"></script>
-  <script src="js/generation.js"></script>
-  <script src="js/animation.js"></script>
-  </body>
->>>>>>> 2df9237ebdc8112476966f4f88230b8dcecb5613
+<script src="js/jquery-3.1.0.js"></script>
+<script src="js/generation.js"></script>
+<script src="js/animation.js"></script>
+</body>
+
 </html>
