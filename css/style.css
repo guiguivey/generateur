@@ -280,7 +280,7 @@ footer a {
       margin-top: 0px;
     }
 }
-@media (max-width:768px) and (orientation:landscape) {
+@media (max-height: 600px) and (orientation:landscape) {
 
     #description, #generateur, #fin, footer {
       display: none;
@@ -288,6 +288,7 @@ footer a {
 
     #landscape {
       height: 100%;
+      margin: 0 50px;
       display: flex;
       flex-direction: column;
       align-items: center;
