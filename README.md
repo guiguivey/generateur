@@ -4,4 +4,4 @@ Avec un ami, nous avons pour projet de développer un générateur d'excuses bid
 
 La version 1 dite "Cowboy", choisit simplement aléatoirement des phrases stockées dans des variables, une variable pour les hommes, une pour les femmes. La version 2 sera plus complexe et permettra à l'utilisateur de choisir différents contextes ce qui lui sortira un pavé de texte pour chacune des options qu'il choisira.
 
-La version 1 est vraiment basique, le CSS n'est pas fait et le responsif non plus. Il est bien évidemment à faire.
+Le responsif est actuellement à peu près bon. J'ai pris la décision d'empêcher l'utilisateur de passer en mode paysage sur son téléphone, car cela rendait la navigation un peu trop compliqué. Mais avec le temps, le but sera de rendre l'aaplication plus jolie et bien plus responsive.
