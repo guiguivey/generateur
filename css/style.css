@@ -16,8 +16,11 @@ h1, h2, h3 {
     text-align: center;
 }
 
+h1 {
+  text-transform: uppercase;
+}
+
 h2 {
-    text-transform: uppercase;
     margin: 15px 0;
 }
 
@@ -28,6 +31,7 @@ h3 {
 
 p {
     width: 100%;
+    max-width: 100%;
     font-size: 20px;
 }
 
@@ -72,9 +76,12 @@ input {
     margin: 10px 0;
 }
 
+#logo {
+    margin-bottom: 40px;
+}
+
 #fleche {
     margin-top: 15px;
-    opacity: 0.6;
     position: relative;
     -webkit-animation-name: hautbas;
     -webkit-animation-duration: 2s;
@@ -113,8 +120,8 @@ input {
 }
 
 #humain {
-  font-size: 20px;
-  margin-left: 10px;
+    font-size: 20px;
+    margin-left: 10px;
 }
 
 #rompre {
@@ -136,9 +143,10 @@ input {
     background-color: white;
     border: 1px solid #2994B2;
     border-radius: 5px;
-    padding: 5px;
+    padding: 8px;
     transition: 0.3s;
     margin: 20px 0;
+    text-transform: uppercase;
 }
 
 #bouton a {
@@ -156,7 +164,17 @@ input {
 }
 
 .fa-2x {
+    color: #FF6600;
+}
+
+.fa-3x {
     margin: 0 5px;
+    color: #FF6600;
+}
+
+.colored {
+    margin: 0 5px;
+    color: black;
 }
 
 footer {
@@ -172,45 +190,109 @@ footer a {
     text-decoration: none;
 }
 
+@-webkit-keyframes couleur {
+    0% {
+        color: #474744;
+    }
+    25% {
+        color: rgb(46, 179, 187)
+    }
+    50% {
+        color: rgb(48, 66, 144);
+    }
+    75% {
+        color: rgb(46, 179, 187)
+    }
+    100% {
+        color: #474744;
+    }
+}
+
+
+}
+@keyframes couleur {
+    0% {
+        color: #474744;
+    }
+
+    25% {
+        color: rgb(46, 179, 187)
+    }
+
+    50% {
+        color: rgb(48, 66, 144);
+    }
+
+    75% {
+        color: rgb(46, 179, 187)
+    }
+
+    100% {
+        color: #474744;
+    }
+}
+#site {
+    position: relative;
+    -webkit-animation-name: couleur;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-name: couleur;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#landscape {
+  display: none;
+}
 
 /*----------MEDIA QUERIES----------*/
-
 @media (max-width:) {}
-
 @media (max-width:768px) {
-  p {
-    font-size: 20px;
-  }
+    p {
+        font-size: 18px;
+    }
+
     h1 {
         font-size: 3rem;
     }
+
     .gauche {
-      margin: 20px 0;
+        margin: 15px 0;
     }
+
     .droite {
-      margin: 20px 0;
+        margin: 15px 0;
     }
+
     #description {
         margin: 0 50px;
     }
+
     #fin {
         margin: 0 50px;
     }
-}
 
+    #fin #fleche {
+      margin-top: 0px;
+    }
+}
 @media (max-width:768px) and (orientation:landscape) {
-    p {
-        font-size: 1rem;
+
+    #description, #generateur, #fin, footer {
+      display: none;
     }
-    #bouton {
-        margin: 5px 0;
-    }
-    #phrase {
-        margin-top: 20px;
-        height: 25px;
+
+    #landscape {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
 }
-
 @media (max-width:992px and min-width:768px) {}
-
 @media (max-width:1200px and min-width:992px) {}
